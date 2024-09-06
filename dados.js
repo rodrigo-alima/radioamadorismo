@@ -47,6 +47,12 @@ let dados = [
         frase: "Compartilhe sua posição, mensagens e muito mais, tudo em tempo real.",
         imagem: "img/aprs-capa.jpeg",
         link: "./detalhe.html?id=7"
+    },
+    {
+        titulo: "Torne-se um Radioamador",
+        frase: "Entre para o fascinante mundo do radioamadorismo. É fácil e gratificante.",
+        imagem: "img/torne-se-radioamador-capa.jpeg",
+        link: "./detalhe.html?id=8"
     }
 ]
 
