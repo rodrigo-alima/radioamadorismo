@@ -1,0 +1,82 @@
+.body {
+    background-color: black;
+}
+
+header {
+    
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Cor de fundo do header */
+    z-index: 1; /* Garante que o header fique acima de outros elementos */
+}
+
+img {
+    height: 90vh;
+}
+
+nav {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: black;
+    padding: 10px;
+}
+
+li a:hover {
+    background-color: rgb(193, 193, 193);
+}
+
+#section {
+    background-color: black;
+    height: max-content;
+    color: white;
+    
+}
+
+.card {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.div1, .div2 {
+    width: 50%; /* Define a largura de cada div */
+    float: left;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .div2 {
+    margin-right: 20px;
+  }
+
+
+
+  footer {
+    padding:20px;
+    background-color: lightgrey;
+    text-align: center;
+    font-size:medium;
+    font-weight: 500;
+  }
