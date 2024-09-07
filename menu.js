@@ -8,7 +8,7 @@ const menuItems = [
     { texto: "Resgate", link: "./detalhe.html?id=6" },
     { texto: "APRS", link: "./detalhe.html?id=7"},
     { texto: "Torne-se Radioamador", link: "./detalhe.html?id=8"},
-    { texto: "Links", link: "#" }
+    { texto: "Links", link: "links.html" }
 ];
 
 // Função para criar e adicionar itens ao menu

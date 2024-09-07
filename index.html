@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Radioamadorismo</title>
 </head>
@@ -21,17 +24,23 @@
     <main>
 
         <div class="container">
-            <section id="section">
+            <section id="dados">
                 <!-- Dados serão inseridos aqui -->
+            </section>
+            <section class="pesquisa" id="pesquisa">
+                <h3>Não encontrou o que procurava?</h3>
+                <input type="text" placeholder="O que você procura?" id="campo-pesquisa">
+                <button onclick="pesquisar()">Pesquisar</button>
             </section>
         </div>
         <script src="dados.js"></script>
+        <script src="app.js"></script>
 
     </main>
     <footer>
-        <p>2024 - Rodrigo Araujo Lima - PY4RDG</p>
-        <p>22 anos de radioamadorismo.</p>
-        <p>Todos os direitos reservados</p>
+        <p>2024 - Rodrigo Araujo Lima - PY4RDG <br>
+        22 anos de radioamadorismo. <br>
+        Todos os direitos reservados</p>
     </footer>
 
 </body>
