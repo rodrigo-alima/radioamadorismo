@@ -119,8 +119,8 @@ footer {
         font-size: 18px;
     }
 
-    p {
-        font-size: 12px;
+    .texto {
+        font-size: 14px;
     }
 
     .detail-container {
