@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-between; /* Espaça os itens ao longo da linha */
     align-items: center; /* Alinha verticalmente os itens no centro */
-    padding: 5px;
+    padding: 10px;
     background-color: #f0f0f0;
     position: fixed;
     top: 0;
@@ -73,6 +73,7 @@ footer {
 
  /* Botão de menu hamburguer */
  #menu-toggle {
+    display: none;
     background: none;
     border: none;
     font-size: 30px;
@@ -147,7 +148,7 @@ footer {
     }
 
     .detail-container {
-        margin-top: 55px;
+        margin-top: 70px;
     }
 
     footer {

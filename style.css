@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between; /* Espaça os itens ao longo da linha */
     align-items: center; /* Alinha verticalmente os itens no centro */
-    padding: 5px;
+    padding: 10px;
     background-color: #f0f0f0;
     position: fixed;
     top: 0;
@@ -94,6 +94,7 @@ li a:hover {
 
  /* Botão de menu hamburguer */
 #menu-toggle {
+    display: none;
     background: none;
     border: none;
     font-size: 30px;
@@ -161,7 +162,7 @@ li a:hover {
     }
 
     #dados {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     footer {
