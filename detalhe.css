@@ -1,12 +1,16 @@
-header {
 
-    padding: 10px;
+header {
+    
+    display: flex;
+    justify-content: space-between; /* Espaça os itens ao longo da linha */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 5px;
+    background-color: #f0f0f0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0; /* Cor de fundo do header */
-    z-index: 1; /* Garante que o header fique acima de outros elementos */
+    z-index: 1;
 }
 
 body {
@@ -67,23 +71,42 @@ footer {
     font-weight: 500;
   }
 
-  #menu-toggle {
-    display: none;
+ /* Botão de menu hamburguer */
+ #menu-toggle {
     background: none;
     border: none;
     font-size: 30px;
     cursor: pointer;
+    padding: 10px;
+}
+
+/* Botão "X" para fechar o menu */
+#close-menu {
+    display: none; /* Esconde o botão inicialmente */
+    background: none;
+    border: none;
+    font-size: 30px; /* Ajusta o tamanho da fonte para ser similar ao do hambúrguer */
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px; /* Um pouco de margem à direita */
 }
 
 
 @media (max-width: 768px) {
     
+    #close-menu {
+        display: block; /* Exibe o botão quando o menu está aberto em dispositivos móveis */
+    }
+
     nav ul {
-        display: none; /* Oculta o menu por padrão em dispositivos móveis */
+        display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
         background-color: #f0f0f0;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     /* Exibe o botão de menu (hambúrguer) em dispositivos móveis */
@@ -98,7 +121,7 @@ footer {
 
     nav ul li {
         display: block; /* Coloca os itens do menu um embaixo do outro */
-        margin: 3px 0; /* Margem entre os itens */
+        margin: 10px 0; /* Margem entre os itens */
     }
 
     body {
@@ -124,11 +147,13 @@ footer {
     }
 
     .detail-container {
-        margin-top: 50px;
+        margin-top: 55px;
     }
 
     footer {
         padding: 2px;
         font-size: 16px;
     }
+
+
 }

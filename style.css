@@ -5,13 +5,16 @@
 
 header {
     
-    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Espaça os itens ao longo da linha */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 5px;
+    background-color: #f0f0f0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0; /* Cor de fundo do header */
-    z-index: 1; /* Garante que o header fique acima de outros elementos */
+    z-index: 1;
 }
 
 img {
@@ -80,8 +83,6 @@ li a:hover {
         text-align: center;
   }
 
-
-
   footer {
     color: black;
     padding:20px;
@@ -91,12 +92,24 @@ li a:hover {
     font-weight: 500;
   }
 
-  #menu-toggle {
-    display: none;
+ /* Botão de menu hamburguer */
+#menu-toggle {
     background: none;
     border: none;
     font-size: 30px;
     cursor: pointer;
+    padding: 10px;
+}
+
+/* Botão "X" para fechar o menu */
+#close-menu {
+    display: none; /* Esconde o botão inicialmente */
+    background: none;
+    border: none;
+    font-size: 30px; /* Ajusta o tamanho da fonte para ser similar ao do hambúrguer */
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px; /* Um pouco de margem à direita */
 }
 
 
@@ -120,12 +133,16 @@ li a:hover {
     .div2{
         margin-right: 0%;
     }
+
     nav ul {
-        display: none; /* Oculta o menu por padrão em dispositivos móveis */
+        display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
         background-color: #f0f0f0;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     /* Exibe o botão de menu (hambúrguer) em dispositivos móveis */
@@ -144,10 +161,15 @@ li a:hover {
     }
 
     #dados {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     footer {
         font-size: 18px;
     }
+
+    #close-menu {
+        display: block; /* Exibe o botão quando o menu está aberto em dispositivos móveis */
+    }
+    
 }
