@@ -31,9 +31,33 @@ function toggleMenu() {
     menu.classList.toggle('show'); // Adiciona ou remove a classe 'show' para exibir/ocultar o menu
 }
 
+function fecharMenuAoClicarFora(event) {
+    const menu = document.getElementById('menu');
+    const toggleButton = document.getElementById('menu-toggle');
+    
+    if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+        menu.classList.remove('show'); // Fecha o menu se clicar fora dele
+    }
+}
+
+function fecharMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.remove('show');
+}
+
 // Chame a função para criar o menu quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
     criarMenu();
+    
     const menuToggle = document.getElementById('menu-toggle');
-    menuToggle.addEventListener('click', toggleMenu); // Adiciona o evento de clique para alternar o menu
+    const closeMenuButton = document.getElementById('close-menu');
+    
+    // Adiciona o evento de clique para alternar o menu (abrir/fechar)
+    menuToggle.addEventListener('click', toggleMenu);
+
+    // Adiciona o evento de clique para fechar o menu com o botão "X"
+    closeMenuButton.addEventListener('click', fecharMenu);
+
+    // Adiciona o evento para fechar o menu ao clicar fora dele
+    document.addEventListener('click', fecharMenuAoClicarFora);
 });
