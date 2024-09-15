@@ -66,3 +66,69 @@ footer {
     font-size:small;
     font-weight: 500;
   }
+
+  #menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    
+    nav ul {
+        display: none; /* Oculta o menu por padrão em dispositivos móveis */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    /* Exibe o botão de menu (hambúrguer) em dispositivos móveis */
+    #menu-toggle {
+        display: block;
+    }
+
+    /* Quando o menu estiver aberto, exiba a lista */
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block; /* Coloca os itens do menu um embaixo do outro */
+        margin: 3px 0; /* Margem entre os itens */
+    }
+
+    body {
+        text-align:left;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .detail-container {
+        margin-top: 50px;
+    }
+
+    footer {
+        padding: 2px;
+        font-size: 10px;
+    }
+}

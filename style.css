@@ -15,7 +15,8 @@ header {
 }
 
 img {
-    height: 75vh;
+    height: 80vh;
+    width:fit-content;
 }
 
 nav {
@@ -53,14 +54,12 @@ li a:hover {
 }
 
 .card {
-    text-align: center;
     padding: 2%;
     display: flex;
     align-items: center;
 }
 
 .div1, .div2 {
-    align-items: center;
     width: 50%; /* Define a largura de cada div */
     float: left;
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
@@ -70,9 +69,9 @@ li a:hover {
     font-size: 24px;
   }
 
- /* .div2 {
+  .div2 {
     margin-right: 20px;
-  }*/
+  }
 
   .pesquisa {
         color: #f0f0f0;
@@ -91,3 +90,64 @@ li a:hover {
     font-size:small;
     font-weight: 500;
   }
+
+  #menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    img {
+        height: 80dvi;
+    }
+
+    .card {
+     /*   padding: 2%;*/
+        display:block;
+    }
+
+    .div1, .div2 {
+        width: 100%; /* Faz as divs ocuparem 100% da largura */
+        float: none; /* Remove o float para evitar que fiquem lado a lado */
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .div2{
+        margin-right: 0%;
+    }
+    nav ul {
+        display: none; /* Oculta o menu por padrão em dispositivos móveis */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    /* Exibe o botão de menu (hambúrguer) em dispositivos móveis */
+    #menu-toggle {
+        display: block;
+    }
+
+    /* Quando o menu estiver aberto, exiba a lista */
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block; /* Coloca os itens do menu um embaixo do outro */
+        margin: 10px 0; /* Margem entre os itens */
+    }
+
+    #dados {
+        margin-top: 40px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}

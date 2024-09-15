@@ -25,5 +25,15 @@ function criarMenu() {
     });
 }
 
+// Função para alternar o menu em dispositivos móveis
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show'); // Adiciona ou remove a classe 'show' para exibir/ocultar o menu
+}
+
 // Chame a função para criar o menu quando o DOM estiver pronto
-document.addEventListener('DOMContentLoaded', criarMenu);
+document.addEventListener('DOMContentLoaded', () => {
+    criarMenu();
+    const menuToggle = document.getElementById('menu-toggle');
+    menuToggle.addEventListener('click', toggleMenu); // Adiciona o evento de clique para alternar o menu
+});
