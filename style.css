@@ -114,7 +114,7 @@ li a:hover {
         width: 100%; /* Faz as divs ocuparem 100% da largura */
         float: none; /* Remove o float para evitar que fiquem lado a lado */
         padding: 5px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .div2{
@@ -148,6 +148,6 @@ li a:hover {
     }
 
     footer {
-        font-size: 10px;
+        font-size: 18px;
     }
 }
